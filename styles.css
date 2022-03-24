@@ -1,0 +1,206 @@
+*{
+    /*  cuando agrego margin padding o border a los elementos, 
+    estos no crezca mas alla del tamano q les di*/
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h1{font-size: 3.5em ;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: circle;}
+li{font-size: 1.25em;}
+
+button{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(223, 73, 73);
+}
+
+button:hover{
+    background-color: rgb(185, 68, 68);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.colored-title{color: rgb(192, 42, 42) ;}
+
+
+header{
+    background-color: rgb(238, 234, 234);
+   
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(192, 42, 42);
+    font-size: 3em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+
+header a:hover{
+    color:rgb(233, 35, 35);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("media/hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#description .container{
+    text-align: center;
+    padding: 200px 12px;
+
+
+}
+
+#programmes{
+    background-color: rgb(36, 34, 34);
+    color: white;
+    text-align: center;
+
+
+}
+
+#programmes .container{
+    padding: 100px 12px;
+
+}
+
+#programmes p{
+    display: none;
+
+}
+#programmes h2{
+    margin: 0;
+    font-size: 3.2em;
+}
+
+#programmes .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px ;
+    border-radius: 15px;
+    
+}
+
+.card:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("media/card1.jpg");
+    
+}
+.card:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("media/card2.jpg");
+}
+.card:last-child{  
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("media/card3.jpg");
+    
+}
+
+#features .container{
+    text-align: center;
+    padding: 200px 12px;
+   
+   
+}
+
+#features li{
+    margin:12px 0px;
+    font-weight: bold;
+}
+
+#start-now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(36, 34, 34);
+    color: white;
+    height: 80vh;
+}
+
+#start-now h2{
+    font-size: 9vw;
+
+}
+
+#start-now button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(238, 234, 234);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(36, 34, 34);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
